@@ -2,7 +2,6 @@ import pandas as pd
 from pandas import DataFrame
 import streamlit as st
 import streamlit.components.v1 as components
-import base64
 
 st.set_page_config(page_title="Consider a new view A Graph Solution by Damie Brooks", page_icon="", layout="wide")
 
@@ -105,32 +104,56 @@ def get_base64_of_bin_file(bin_file):
 	with open(bin_file, 'rb') as f:
 		data = f.read()
 	return base64.b64encode(data).decode()	
-def set_png_as_page_bg(png_file):
-	bin_str = get_base64_of_bin_file(png_file)
+def set_png_as_page_bgbear():
 	page_bg_img = '''
 	<style>
 	.sampleicon {
-		background-image: url("data:image/png;base64,%s");
+		background-image: url('https://raw.githubusercontent.com/DamieBrooks0803/tigergraph-hackathon/main/streamlitapp/images/bear.png');
 		 background-size: cover;
 		 height: 145px;
 		 width: 143px;
 	}
 	</style>
-	''' % bin_str
+	'''
 	st.markdown(page_bg_img, unsafe_allow_html=True)
 	return
-def set_png_as_page_bg2(png_file):
-	bin_str = get_base64_of_bin_file(png_file)
+def set_png_as_page_bgtiger():
+	page_bg_img = '''
+	<style>
+	.sampleicon {
+		background-image: url('https://raw.githubusercontent.com/DamieBrooks0803/tigergraph-hackathon/main/streamlitapp/images/tiger.png');
+		 background-size: cover;
+		 height: 145px;
+		 width: 143px;
+	}
+	</style>
+	'''
+	st.markdown(page_bg_img, unsafe_allow_html=True)
+	return	
+def set_png_as_page_bgelephant():
+	page_bg_img = '''
+	<style>
+	.sampleicon {
+		background-image: url('https://raw.githubusercontent.com/DamieBrooks0803/tigergraph-hackathon/main/streamlitapp/images/elephant.png');
+		 background-size: cover;
+		 height: 145px;
+		 width: 143px;
+	}
+	</style>
+	'''
+	st.markdown(page_bg_img, unsafe_allow_html=True)
+	return		
+def set_png_as_page_bg2():
 	page_bg_img = '''
 	<style>
 	.samplesentiment {
-		background-image: url("data:image/png;base64,%s") !important;
+		background-image: url('https://raw.githubusercontent.com/DamieBrooks0803/tigergraph-hackathon/main/streamlitapp/images/negative_thumbs.png') !important;
 		 background-size: cover;
 		 height: 40px;
 		 width: 40px;
 	}
 	</style>
-	''' % bin_str
+	'''
 	st.markdown(page_bg_img, unsafe_allow_html=True)
 	return	
 #dynamic content div containers for each post by topic
@@ -266,11 +289,11 @@ def set_obspost_container3(selection):
 def my_widget(key):
 	#add a custom author image for each category type based on selection
 	if key == 'War':
-		set_png_as_page_bg('images/bear.png')
+		set_png_as_page_bgbear()
 	if key == "Cryptocurrency":
-		set_png_as_page_bg('images/tiger.png')
+		set_png_as_page_bgtiger()
 	if key == "Antiwork":
-		set_png_as_page_bg('images/elephant.png')						
+		set_png_as_page_bgelephant()					
 	return 
 if add_selectbox: 
 	my_widget(add_selectbox)
@@ -313,7 +336,7 @@ def fillcontainerobs3():
 	return				
 st.header("Consider a new view, a graph solution")
 st.subheader("Submitted by: Damie Brooks")
-set_png_as_page_bg2('images/negative_thumbs.png')						
+set_png_as_page_bg2()						
 with st.container():	
 	if add_selectbox == 'War':
 		st.markdown("""<div class='sampleheading'>A Sample War Post</div>""", unsafe_allow_html=True)
