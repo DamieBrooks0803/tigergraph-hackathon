@@ -18,7 +18,7 @@ st.sidebar.markdown("""<div class='sidebarinfo3'><p>Learn more <a href='https://
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)	
-local_css("dbapp.css")
+local_css("https://raw.githubusercontent.com/DamieBrooks0803/tigergraph-hackathon/c27a2fe7b00d398f23295d34610a13f1fecee6b6/streamlitapp/dbapp.css")
 #set the image for the post user avatar
 def get_base64_of_bin_file(bin_file):
 	with open(bin_file, 'rb') as f:
