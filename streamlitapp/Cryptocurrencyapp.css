@@ -1,0 +1,31 @@
+.postcard{
+	background-color: #003366 !important;
+	border-radius: 20px;
+	padding-left: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	color: white;
+	height: 250px;
+	padding-right: 15px;
+}
+.postcard a{
+	color: #f2f2f2;
+}
+#samplePost{
+	width: 95%;
+}
+.war{
+	display: none;
+}
+.ask{
+	display: none;
+}
+.crypto{
+	display: block;
+}
+.suggestioheading{
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}

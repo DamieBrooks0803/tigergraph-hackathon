@@ -1,0 +1,79 @@
+/**div[data-testid="stMarkdownContainer"]{
+	border: 1px solid red !important;
+}**/
+body, .css-nlntq9, h1, h2, h3{
+	font-family: Tahoma, sans-serif !important;
+}
+h1 {
+    text-transform: uppercase;
+}
+h2 {
+    text-transform: capitalize;
+}
+h3 {
+    text-transform: lowercase;
+}
+.stSelectbox{
+	boder: 1px solid blue !important;
+}
+.sampleheadline{
+	font-weight: bold;
+	font-size: 1.5em;
+	font-style: italic;
+}
+element.style{
+	display: block !important;
+}
+.sampleheading{
+	font-size: 1.8em;
+	font-weight: bold;
+    color: #2e5894;
+}
+.postcard{
+	background-color: #003366;
+	width: 300px;
+}
+.samplePost{
+	background-color: black;
+	padding-right: 50px;
+}
+.crypto{
+	display: none;
+}
+.war{
+	display: none;
+}
+.ask{
+	display: none;
+}
+.sampleicon{
+	height: 100px;
+	width: 100px;
+	padding: 50 50 50 50;
+}
+.sidebarinfo{
+	background-color: #add8e6;
+	height: 300px;
+	color: #666666;
+	border-radius: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 30px;
+	margin-top: 50px;
+}
+.sidebarinfo2{
+	background-color: #add8e6;
+	height: 500px;
+	border-radius: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 30px;
+	margin-top: 50px;
+	color: #666666;
+}
+.sidebarinfo3{
+	padding-left: 15px;
+	padding-top: 30px;
+	color: #666666;
+}
+
