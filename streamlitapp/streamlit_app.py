@@ -5,6 +5,7 @@ import streamlit.components.v1 as components
 import base64
 
 st.set_page_config(page_title="Consider a new view A Graph Solution by Damie Brooks", page_icon="", layout="wide")
+
 #allow the user to select a topic
 add_selectbox = st.sidebar.selectbox(
     "Select a topic to view diverse perspectives.",
@@ -14,11 +15,91 @@ st.sidebar.markdown("""<div class='sidebarinfo'><p>In today's hyper-digital worl
 st.sidebar.markdown("""<div class='sidebarinfo2'><p>For this Tiger Graph challenge, we extract post listings from Reddit across the entire community. We apply <b>similarity</b> and <b>sentiment</b> analysis to look for patterns.</p><p>Using these findings, we can run <b>custom graph queries and traversals</b> across our graph solution to suggest other posts that are relevant but different in their mood or subreddit community.</p><p>Offering diverse and alternative perspectives can break confirmation bias and <b>foster critical thinking</b> - allowing users to think for themselves.</p></div>""", unsafe_allow_html=True)
 st.sidebar.markdown("""<div class='sidebarinfo3'><p>Learn more <a href='https://www.linkedin.com/in/damiebrooks0803/' target='_blank'>about me.</a></div>""", unsafe_allow_html=True)
 
-#set the base css file
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)	
-local_css("https://raw.githubusercontent.com/DamieBrooks0803/tigergraph-hackathon/c27a2fe7b00d398f23295d34610a13f1fecee6b6/streamlitapp/dbapp.css")
+def loadinstyle():
+	stylecontent = '''
+	<style>
+		body, .css-nlntq9, h1, h2, h3{
+			font-family: Tahoma, sans-serif !important;
+			}
+		h1 {text-transform: uppercase;}
+		h2 {text-transform: capitalize;}
+		h3 {text-transform: lowercase;}
+		.sampleheadline{
+			font-weight: bold;
+			font-size: 1.5em;
+			font-style: italic;
+		}
+		element.style{display: block !important;}
+		.sampleheading{
+			font-size: 1.8em;
+			font-weight: bold;
+    			color: #2e5894;
+		}
+		.postcard{
+			background-color: #003366;
+			width: 300px;
+		}
+		.samplePost{
+			background-color: black;
+			padding-right: 50px;
+		}
+		.sampleicon{
+			height: 100px;
+			width: 100px;
+			padding: 50 50 50 50;
+		}
+		.sidebarinfo{
+			background-color: #add8e6;
+			height: 300px;
+			color: #666666;
+			border-radius: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 30px;
+			margin-top: 50px;
+		}
+		.sidebarinfo2{
+			background-color: #add8e6;
+			height: 500px;
+			border-radius: 15px;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 30px;
+			margin-top: 50px;
+			color: #666666;
+		}
+		.sidebarinfo3{
+			padding-left: 15px;
+			padding-top: 30px;
+			color: #666666;
+		}
+		.postcard{
+			background-color: #003366 !important;
+			border-radius: 20px;
+			padding-left: 12px;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			color: white;
+			height: 250px;
+			padding-right: 15px;
+		}
+		.postcard a{
+			color: #f2f2f2;
+		}
+		#samplePost{
+			width: 95%;
+		}
+		.suggestioheading{
+			font-size: 20px;
+			font-weight: bold;
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}		
+	</style>
+	'''
+	st.markdown(stylecontent, unsafe_allow_html=True)
+	return
+loadinstyle()
 #set the image for the post user avatar
 def get_base64_of_bin_file(bin_file):
 	with open(bin_file, 'rb') as f:
@@ -190,7 +271,7 @@ def my_widget(key):
 		set_png_as_page_bg('images/tiger.png')
 	if key == "Antiwork":
 		set_png_as_page_bg('images/elephant.png')						
-	return local_css(key + "app.css")
+	return 
 if add_selectbox: 
 	my_widget(add_selectbox)
 def fillcontainercon1():
