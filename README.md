@@ -14,3 +14,21 @@ The project involves:
   - Jupyter notebook
   - Reddit
 
+Query Instructions
+
+AuthorMostPosts
+	Retrieve a list of the authors ordered by the most posts they have listed. Runs against the entire data set including all subreddits.
+
+MostEngagingSubreddits
+	Retrieve a list of subreddits ordered by the most comments across all of their posts. Runs against the entire data set including all subreddits.
+
+Our project UI queries:
+Q1controversial
+	Given a post by listing id, retrieve a list of posts in that post's subreddit that are considered controversial (or polarizing, meaning they have a large number of up and down votes.)
+
+Q2new
+	Given a post by listing id, retrieve a list of posts in that subreddit that are new and maybe don't have as much engagement yet, such as comments or votes. 
+
+Q3sentiment
+	Given a post by listing id, retrieve a list of posts in that post's subreddit that has a varied sentiment from the given post. 
+
