@@ -14,21 +14,51 @@ The project involves:
   - Jupyter notebook
   - Reddit
 
-# Query Instructions
+## Query Instructions
 
-AuthorMostPosts
-	Retrieve a list of the authors ordered by the most posts they have listed. Runs against the entire data set including all subreddits.
+These are the queries can you run yourself through the RedditConnection juypyter notebook. Some are embedded within the notebook, but for those that aren't, I listed out the queries and what they do. 
 
-MostEngagingSubreddits
-	Retrieve a list of subreddits ordered by the most comments across all of their posts. Runs against the entire data set including all subreddits.
+#### AuthorMostPosts
 
-Our project UI queries:
-Q1controversial
-	Given a post by listing id, retrieve a list of posts in that post's subreddit that are considered controversial (or polarizing, meaning they have a large number of up and down votes.)
+Retrieve a list of the authors ordered by the most posts they have listed. Runs against the entire data set including all subreddits. Returns 10.
 
-Q2new
-	Given a post by listing id, retrieve a list of posts in that subreddit that are new and maybe don't have as much engagement yet, such as comments or votes. 
+#### MostEngagingSubreddits
+Retrieve a list of subreddits ordered by the most comments across all of their posts. Runs against the entire data set including all subreddits. Returns 20.
 
-Q3sentiment
-	Given a post by listing id, retrieve a list of posts in that post's subreddit that has a varied sentiment from the given post. 
+#### SimilarSubreddits
+
+Retrieve a list of subreddit names that are most similar in name to a given subreddit name. 
+
+#### SubredditMostPosts
+
+Retrieve a list of subreddit names ordered by the most posts in that subreddit. Runs against the entire data set of subreddits. Returns 10.
+
+### Use these queries to find listing IDs to use in the recommendation queries below.
+
+_A listing id is created by removing the spaces from the headline/title of each listing then adding an underscore and then the subreddit the listing was posted in. This is because many listings are posted in more than one subreddit._
+
+#### TopListingIDsInSubAntiwork
+Returns the top 10 posts in the Antiwork subreddit, ordered by the number of comments. 
+
+#### TopListingIDsInSubCryptocurency
+Returns the top 10 posts in the Cryptocurrency subreddit, ordered by the number of comments.
+
+#### TopListingIDsInSubWar
+Returns the top 10 posts in the War subreddit, ordered by the number of comments. 
+
+#### TopListingIDs
+Returns the top 10 posts in the entire data set including all subreddits, ordered by the number of comments. 
+
+### Our project UI queries:
+#### Q1controversial
+
+Given a post by listing id, retrieve a list of posts in that post's subreddit that are considered controversial (or polarizing, meaning they have a large number of up and down votes.)
+
+#### Q2new
+
+Given a post by listing id, retrieve a list of posts in that subreddit that are new and maybe don't have as much engagement yet, such as comments or votes. 
+
+#### Q3sentiment
+
+Given a post by listing id, retrieve a list of posts in that post's subreddit that has a varied sentiment from the given post. 
 
