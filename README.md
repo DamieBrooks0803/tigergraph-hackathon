@@ -14,7 +14,7 @@ The project involves:
   - Jupyter notebook
   - Reddit
 
-Query Instructions
+# Query Instructions
 
 AuthorMostPosts
 	Retrieve a list of the authors ordered by the most posts they have listed. Runs against the entire data set including all subreddits.
