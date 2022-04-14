@@ -37,6 +37,9 @@ Retrieve a list of subreddit names ordered by the most posts in that subreddit. 
 
 _A listing id is created by removing the spaces from the headline/title of each listing then adding an underscore and then the subreddit the listing was posted in. This is because many listings are posted in more than one subreddit._
 
+#### TopListingIDs
+Returns the top 10 posts in the entire data set including all subreddits, ordered by the number of comments. 
+
 #### TopListingIDsInSubAntiwork
 Returns the top 10 posts in the Antiwork subreddit, ordered by the number of comments. 
 
@@ -46,8 +49,8 @@ Returns the top 10 posts in the Cryptocurrency subreddit, ordered by the number 
 #### TopListingIDsInSubWar
 Returns the top 10 posts in the War subreddit, ordered by the number of comments. 
 
-#### TopListingIDs
-Returns the top 10 posts in the entire data set including all subreddits, ordered by the number of comments. 
+#### TopListingIDsInSub
+Returns the top 10 posts in a given subreddit by name, ordered by the number of comments. Use this as a generic version of the recommendation queries. 
 
 ### Our project UI queries:
 #### Q1controversial
