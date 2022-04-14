@@ -18,6 +18,8 @@ The project involves:
 
 These are the queries can you run yourself through the RedditConnection juypyter notebook. Some are embedded within the notebook, but for those that aren't, I listed out the queries and what they do. 
 
+Keep in mind the listing IDs and subreddits are case sensitive. 
+
 #### AuthorMostPosts
 
 Retrieve a list of the authors ordered by the most posts they have listed. Runs against the entire data set including all subreddits. Returns 10.
