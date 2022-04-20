@@ -42,11 +42,11 @@ My project considers the Social Media community of Reddit as the general "intern
 
 - **Ambitious and complex graph:**
 
-The Reddit posts are limited to a user posting a listing in a subreddit. The data model is my project extends this to include a "call type" - which type of extraction are we pulling from reddit as well as the similarity of subreddits by their name and the sentiment of the post headline. The size of my graph was limited to what my single cluster free tier would support - about 96,000 vertices, resulting in around 386,000 edges. Given a larger cluster, Reddit allows you to pull 100,000 pulls a day, so the size of the graph could be in the Trillions. This would optimize recommendations with a closer similarity score.
+The Reddit posts are limited to a user posting a listing in a subreddit. The data model in my project extends this to include a "call type" - which type of extraction are we pulling from Reddit, as well as the similarity of subreddits by their name, and the sentiment of the post headline. The size of my graph was limited to what my single cluster free tier would support - about 96,000 vertices, resulting in around 386,000 edges. Given a larger cluster, Reddit allows you to pull 100,000 pulls a day, so the size of the graph could be in the Trillions. This would optimize recommendations with a closer similarity score.
 
 - **Applicable graph solution:** 
 
-Any user generated content can leverage similarity and sentiment to offer recommendations to others. This type of graph model that I propose, and the solution architecture in my project can be widely applied to any industry that uses user generated content such as, but not limited to: Product Reviews, Social Media Posts such as Twitter and Facebook, Forums, Blogs, etc.
+Any user generated content can leverage similarity and sentiment to offer recommendations to others. This type of graph model that I propose, and the solution architecture in my project can be widely applied to any industry or application that leverages user generated content such as, but not limited to: Product Reviews, Social Media Posts such as Twitter and Facebook, and Comments on Videos, Forums, Blogs, etc.
 
 Other additions: 
 
@@ -100,7 +100,11 @@ Run notebooks:
 - In data folder, Reddit_large_5.csv is a sample of the extraction from Reddit
 
 4. Steps to build/run project
+
 Given a subreddit: War, Cryptocurrency, or Antiwork, visit the [streamlit app](https://share.streamlit.io/damiebrooks0803/tigergraph-hackathon/main/streamlitapp/streamlit_app.py) for recommended posts. 
+
+![Recommendations from a sample war post](https://raw.githubusercontent.com/DamieBrooks0803/tigergraph-hackathon/main/recommendationUI.png)
+
 
 Or run the queries yourself in your own python notebook or through my RedditConnection notebook...
 
@@ -162,7 +166,7 @@ Given a post by listing id, retrieve a list of posts in that post's subreddit th
 
 The Streamlit recommendation app is built using static data added in from the Q1, Q2, and Q3 queries. This was because I experienced performance issues when trying to extract the data from the database directly from the app. Future improvements would leverage installed queries that can be run automatically with dynamic data. I also sampled subreddits: War, Antiwork, and Cryptocurrency. Being able to show recommendations from any subreddit would be ideal. Finally, if I had a fully working cluster on Tigergraph, I would like to be able to continuously stream Reddit posts every day at 100,000+ records a day to get a bigger view of wider perspectives. However, even in the small sample, I think this illustrates the problem and opportunity with analyzing user-generated-content well. 
 
-I did not include comments into my graph other than the number of comments on a page from an engagement perspective. Extending the graph solution to include comments would add in users that maybe don't post their own postings but will more likely comment on an existing post. 
+I did not include comments into my graph other than the number of comments on a post from an engagement perspective. Extending the graph solution to include comments would add in users that maybe don't post their own postings but will more likely comment on an existing post. 
 
 ## Reflections
 
