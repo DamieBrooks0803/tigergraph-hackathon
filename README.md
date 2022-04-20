@@ -16,6 +16,8 @@ In today’s hyper-digital world, algorithms determine what content we see. Narr
 
 For this Tiger Graph challenge, we extract post listings from Reddit across the entire community. We apply similarity and sentiment analysis to look for patterns.
 
+![Data Model](https://raw.githubusercontent.com/DamieBrooks0803/tigergraph-hackathon/main/FCT_graphDataModel.png)
+
 Using these findings, we can run custom graph queries and traversals across our graph solution to suggest other posts that are relevant but different in their mood or subreddit community.
 
 Offering diverse and alternative perspectives can break confirmation bias and foster critical thinking - allowing users to think for themselves.
@@ -28,20 +30,22 @@ The solution for our graph challenge involves 3 main steps:
 - Step 2: The data is loaded into Tiger Graph solution with various traversal and data science queries. 
 - Step 3: Using a Jupyter notebook, Graphistry for visualization, and custom queries, we suggest posts that are relevant by topic, similar by content, but diverse in their viewpoint. 
 
-![Data Model](https://raw.githubusercontent.com/DamieBrooks0803/tigergraph-hackathon/main/FCT_GraphDataModel.png)
-
 
 ## Written Defense
 - **Impactful in solving a real world problem:**  
+
 Psychology teaches that confirmation bias negatively affects our lives by causing us to limit our viewpoint, unfairly judge others who think differently, and subsequently causes us to make poorer decisioning choices because of this limited view. Seeing or believing only things that are in line with your current thinking, without fairly considering other perspectives, prevents us from being objective. When you can thinking critically while looking at various sides of a topic, it raises your empathy to others as well as helps you see the big picture. In social media, this translates to a more well-rounded acceptance of others and a generally happier outlook when confronted with information that would otherwise be distressing.
 
 - **Innovative use case of graph:** 
+
 My project considers the Social Media community of Reddit as the general "internet town square." Reddit communities span a wide range of topics. But because everything is text-based (with user generated content) there was many opportunities for natural language processing and similarity analysis. My project embeds sentiment and similarity into the graph itself to make the queries simpler and more efficient. The graph traversal queries look for similar viewpoints based on their Reddit community but diverse based on sentiment and content. Embedding similarity and sentiment into the graph through the data model allows for simply queries rather than trying to query for this analysis within the post nodes.
 
 - **Ambitious and complex graph:**
+
 The Reddit posts are limited to a user posting a listing in a subreddit. The data model is my project extends this to include a "call type" - which type of extraction are we pulling from reddit as well as the similarity of subreddits by their name and the sentiment of the post headline. The size of my graph was limited to what my single cluster free tier would support - about 96,000 vertices, resulting in around 386,000 edges. Given a larger cluster, Reddit allows you to pull 100,000 pulls a day, so the size of the graph could be in the Trillions. This would optimize recommendations with a closer similarity score.
 
 - **Applicable graph solution:** 
+
 Any user generated content can leverage similarity and sentiment to offer recommendations to others. This type of graph model that I propose, and the solution architecture in my project can be widely applied to any industry that uses user generated content such as, but not limited to: Product Reviews, Social Media Posts such as Twitter and Facebook, Forums, Blogs, etc.
 
 Other additions: 
@@ -87,6 +91,7 @@ This can include:
 1. Clone repository - [Tigergraph challenge on Github](https://github.com/DamieBrooks0803/tigergraph-hackathon)
 2. Install dependencies
 3. Access data
+
 Run notebooks:
 
 - RedditConnection.ipynb for running Tigergraph queries
