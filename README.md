@@ -20,12 +20,16 @@ Using these findings, we can run custom graph queries and traversals across our 
 
 Offering diverse and alternative perspectives can break confirmation bias and foster critical thinking - allowing users to think for themselves.
 
-The solution for our graph challenge involves 3 main steps: 
-Step 1: We extract data from Reddit and enrich the data with sentiment and similarity analysis. 
-Step 2: The data is loaded into Tiger Graph solution with various traversal and data science queries. 
-Step 3: Using a Jupyter notebook, Graphistry for visualization, and custom queries, we suggest posts that are relevant by topic, similar by content, but diverse in their viewpoint. 
+![Solution Architecture](https://raw.githubusercontent.com/DamieBrooks0803/tigergraph-hackathon/main/FCT_TigerGraph_Arch_DamieBrooks.png)
 
-![Solution Architecture](/path/to/img.jpg)
+The solution for our graph challenge involves 3 main steps: 
+
+- Step 1: We extract data from Reddit and enrich the data with sentiment and similarity analysis. 
+- Step 2: The data is loaded into Tiger Graph solution with various traversal and data science queries. 
+- Step 3: Using a Jupyter notebook, Graphistry for visualization, and custom queries, we suggest posts that are relevant by topic, similar by content, but diverse in their viewpoint. 
+
+![Data Model](https://raw.githubusercontent.com/DamieBrooks0803/tigergraph-hackathon/main/FCT_GraphDataModel.png)
+
 
 ## Written Defense
 - **Impactful in solving a real world problem:**  
