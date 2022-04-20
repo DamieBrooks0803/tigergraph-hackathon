@@ -174,7 +174,7 @@ One of the things that surprised me was how much time to took for me to ramp up 
 
 This project gave me a lot of insight into our society as a whole because I saw posts and subreddits within the community that I would not have ever seen before. Because the Russian/Ukrainian war broke out right when the project started, I was able to see a lot of posts around that topic, good and bad. I also found it interesting how many people merely share existing posts or reshare content rather than write their own. And it surprised me that so many people don't post body content more than they do post an interesting headline.
 
-Finally, I learned that Reddit does moderation of their content quite often - which impacts which posts you can show. It's hard to beat an echo chamber or a narative-forcing algorithm that removes content before anyone can even see it. And while I understand why that is done, I also see how it could be dangerous if weilding for the wrong reasons. 
+Finally, I learned that Reddit does moderation of their content quite often - which impacts which posts you can show. It's hard to beat an echo chamber or a narative-forcing algorithm that removes content before anyone can even see it. And while I understand why that is done, I also see how it could be dangerous if wielded for the wrong reasons. 
 
 ## References
 
