@@ -84,9 +84,7 @@ Python libraries used:
 
 ## Installation
 
-Please give detailed instructions on installing, configuring, and running the project so judges can fully replicate and assess it. 
-
-This can include:
+Instructions on installing, configuring, and running the project to replicate and assess it. 
 
 1. Clone repository - [Tigergraph challenge on Github](https://github.com/DamieBrooks0803/tigergraph-hackathon)
 2. Install dependencies
